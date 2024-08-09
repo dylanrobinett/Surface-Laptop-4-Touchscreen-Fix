@@ -17,10 +17,11 @@ Instructions for getting the touchscreen working on a Surface Laptop 4 running U
 ## Steps to Enable the Touchscreen
 
 1. **Download the Necessary Files:**
-   - Ensure you have the following files downloaded to your system:
+   - The files I used can be found on the [Linux-Surface GitHub Releases page](https://github.com/linux-surface/linux-surface/releases?expanded=true&page=1&q=).
+   - Ensure you download the following files specific to your setup:
      - `linux-headers-6.8.6-surface-1_6.8.6-surface-1_amd64.deb`
      - `linux-image-6.8.6-surface-1_6.8.6-surface-1_amd64.deb`
-   - These files are specific to the Surface Laptop 4 and are designed to work with the Linux-Surface kernel.
+   - Note: These files were specific to my setup, and this method worked for me on a Surface Laptop 4.
 
 2. **Install the Kernel Image and Headers:**
    - Open a terminal.
@@ -43,4 +44,3 @@ Instructions for getting the touchscreen working on a Surface Laptop 4 running U
 ## Note
 
 After rebooting, your touchscreen should be fully functional. If it isn’t, make sure you’re running the correct kernel by checking with `uname -r` and verifying it shows `6.8.6-surface-1`.
-
